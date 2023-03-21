@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h1>Welcome to my page :<h1>
+    <form action='/analyze' method='post'>
+        {% csrf_token %}
+        <textarea name='text' style='width: 301px; height: 61px;'></textarea><br>
+        <input type='checkbox' name='removepunc'> Remove Punctuation<br>
+        <input type='checkbox' name='uppercase'> Uppercase <br>
+        <input type='checkbox' name='removenl'> Remove Newline <br>
+        <input type='checkbox' name='extraspacer'> Extra sapce Remove <br>
+        <input type='checkbox' name='charcount'> Char Count <br>
+        <button type='submit'> submit </button>
+    </form>
+  </body>
+</html>
